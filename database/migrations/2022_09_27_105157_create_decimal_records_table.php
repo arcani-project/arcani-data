@@ -15,9 +15,9 @@ return new class extends Migration
   {
     Schema::create('decimal_records', function (Blueprint $table) {
       $table->bigIncrements('id');
-
       $table->foreignId('record_definition_id')->constrained();
-      $table->decimal('data')->nullable();
+
+      $table->decimal('data', 16, 4)->nullable();
 
       $table->softDeletes();
       $table->timestamps();
