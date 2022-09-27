@@ -1,1 +1,5 @@
-<a {{ $attributes->merge(['class' => 'block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition']) }}>{{ $slot }}</a>
+<li class="w-full" {{ $attributes->merge(['class' => 'w-full']) }}>
+  <a class="w-full" href="{{ route('profile.show') }}">
+    {{ $slot }}
+  </a>
+</li>
