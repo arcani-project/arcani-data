@@ -1,3 +1,3 @@
 <a href="/">
-  <img src="images/logos/cover.png" class="h-16 rounded-lg" />
+  <img src="{{ url('/images/logos/focused.png') }}" class="h-14" />
 </a>
